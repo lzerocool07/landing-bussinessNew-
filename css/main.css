@@ -53,7 +53,7 @@ p{
     margin-top:0;
   
 }
-.studioInf p{
+.studioInf p ,.credoContent p{
     font:24px 'PT Sans Caption';
     text-align: center;
     line-height:1.5; 
@@ -176,7 +176,7 @@ p{
     height:70px;
     background: url(../img/aboutSetIcon.png);
 }
-/*/aboutBottom*/
+
 
 .promotion::before{
     background-position:-46px 3px; 
@@ -197,3 +197,320 @@ p{
 .support:hover::before{
     background-position:-112px -73px; 
 }
+/*/aboutBottom*/
+
+/*credo*/
+.credoBg{
+    background:url(../img/credoBg.jpg)no-repeat top center;
+    background-size: cover;
+    padding:130px 0 150px 0;
+    position: relative;
+    z-index:-2; 
+}
+/*/credo*/
+
+/*price*/
+.price{
+    position: relative;
+    margin-bottom:100px; 
+}
+.price::before{
+    content:'';
+    width:626px;
+    height:527px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top:-40px;
+    background: url(../img/priceBlockBg.jpg);
+}
+.priceList{
+    margin-bottom: 160px;
+}
+.priceBlock{
+    width:27%;
+    float:left;
+    padding:20px 10px 60px 10px;
+    margin: 300px 50px 50px 0; 
+    
+}
+.priceBlock p{
+    font: 40px 'Futura Md Bt';
+    font-weight: bold;
+    color:#fff;
+    text-align: center;
+    margin-top: 10px; 
+    margin-bottom:90px; 
+    border-bottom: 2px solid #ccc;
+}
+.priceBlock span{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.landing{
+    background: url(../img/landingBg.jpg) top center;
+}
+.web{
+    background: url(../img/webSiteBg.jpg) top center;
+}
+.shop{
+    background: url(../img/shopBg.jpg) top center;
+}
+
+
+/*seo*/
+.seoContent ,.adaptiveContent ,.careContent{
+    position: relative;
+    width:60%;
+    float:left; 
+     
+}
+.seoContent::before{
+    content: 'Be the first';
+    text-transform: uppercase;
+    font-size:80px;
+    font-family: Tahoma;
+    font-weight: bold;
+    color:#dfdfdf;
+    position: absolute;
+    
+    z-index: -1;
+}
+.seoContent h4 , .adaptiveContent h4 ,.careContent h4{
+    font:36px 'Parangon 530C';
+    color:#000;
+    text-transform: uppercase;
+    margin-left:10px 
+}
+.seoContent p , .adaptiveContent p , .careContent p{
+    font:24px 'Arial';
+    color:#000;
+    line-height:1.6;
+    margin-left: 10px;
+}
+.seoImg{
+    background: url(../img/seo.png)no-repeat top right;
+    height:471px;
+    margin-right:80px 
+}
+/*/seo*/
+/*/price*/
+/*lastProjects*/
+
+.lastProjectsTittle{
+    position: relative;
+    padding: 40px 0; 
+    background: #303263;
+   
+}
+.lastProjectsTittle h5{
+    font:36px 'Parangon 530C',sans-serif;
+    color:#fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin:0;
+    position: relative;
+    z-index:2; 
+}
+.lastProjectsTittle::before{
+    content:'Our projects';
+    display: block;
+    position: absolute;
+    left:50%;
+    top:-4%;
+    margin-left:-331px;
+    z-index: 1;
+    font:96px 'Tahoma', sans-serif;
+    color:#8c8da3;
+    text-transform: uppercase;
+}
+.item1Style{
+    width: 50%;
+    float:left;
+    overflow: hidden;
+}
+.item2Style{
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    height: 100%;
+}
+.footerProjects{
+    padding: 40px 0; 
+    background: #303263;
+    position: relative;
+}
+.footerProjects button{
+    text-transform: uppercase;
+    padding:10px 10px;
+    width: 200px;
+    background: #6a6b8e;
+    border-radius:5px; 
+    color:#fff;
+    position: absolute;
+    left:50%;
+    top:23%;
+    margin-left: -110px;
+}
+/*/lastProjects*/
+
+/*adaptive*/
+.adaptive{
+    padding:120px 0; 
+}
+
+.adaptiveContent::before{
+    content: 'Adaptive';
+    text-transform: uppercase;
+    font-size:80px;
+    font-family: Tahoma;
+    font-weight: bold;
+    color:#dfdfdf;
+    position: absolute;
+    z-index: -1;
+    
+}
+.adaptiveImg , .careImg{
+    width: 40%;
+    float:left;
+}
+/*/adaptive*/
+
+/*trade*/
+.trade{
+    background: url(../img/tradeBg.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 50px 0 100px 0;
+    position: relative;
+}
+.tradeBlockItem{
+    width:29%;
+    float: left;
+    margin:0 2%;
+    position: relative;
+}
+.tradeBlockItem h5 {
+    font:30px 'Parangon 530C', sans-serif;
+    color:#fff;
+    text-transform: uppercase;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+.tradeBlockItem p{
+    font:16px 'Arial' ,sans-serif;
+    color:#fff;
+    line-height:1.5; 
+    
+}
+.tradeBlockItem::before{
+    content: '';
+    width:80px;
+    height:65px; 
+    background:url(../img/tradeSetIcon.png)no-repeat; 
+    position: absolute;
+    top:20px;
+}
+.process::before{
+    background-position: -78px 0;
+}
+.conditions::before{
+    background-position: -156px 4px;
+}
+.trade button{
+    padding:10px 12px;
+    background:#f6ae48;
+    border-radius:5px; 
+    font:24px 'Parangon 530C',sans-serif;
+    color:#fff;
+    text-transform: uppercase;
+    position: absolute;
+    left:50%;
+    margin-left:-135px;
+   
+}
+/*/trade*/
+
+/*care*/
+.care{
+    padding:100px 0 150px 0;
+}
+/*/care*/
+
+
+
+
+/*callBack*/
+.callBack{
+    background: url(../img/callBackBg.jpg)no-repeat top center;
+    background-size: cover;
+    padding:100px 0 120px 0; 
+}
+.callBackText{
+    width:50%;
+    float:left;
+}
+.callBackText h5{
+    font:30px 'Parangon 530C',sans-serif;
+    color:#fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.callBackText p{
+    font:18px 'Arial',sans-serif;
+    color:#fff;
+    line-height:1.5; 
+}
+.callBackForm{
+    float: left;
+    width:50%;
+}
+form{
+    position: relative
+}
+form p{
+    margin-bottom:0;
+    margin-top:0; 
+}
+input{
+    background: transparent;
+    border:2px solid #fff;
+    width:249px;
+    height: 40px;
+    color:#fff;
+    font-size:18px;
+    padding-left:20px;
+    margin:0;
+}
+::-webkit-input-placeholder{
+    color:#fff;
+}
+input[type="email"]{
+    width: 522px;
+}
+textarea{
+    resize: none;
+    background: transparent;
+    border:2px solid #fff;
+    width: 512px;
+    padding-left: 20px;
+    padding-right: 10px;
+    color:#fff;
+}
+form button{
+   position: absolute;
+    right: 74px;
+    bottom: -23px;
+    font:14px 'Parangon 530C',sans-serif;
+    color:#fff;
+    background: #f6ae48;
+    text-transform: uppercase;
+    padding: 10px 12px;
+    border-radius:10px; 
+}
+form p{
+    font:14px 'Arial';
+    color:#fff;
+}
+/*/callBack*/
