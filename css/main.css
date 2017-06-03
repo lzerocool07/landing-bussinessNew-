@@ -11,7 +11,7 @@ h1{
     float:left;
 }
 
-h2{
+h2 , .price h2{
     font:48px 'Parangon 530C', sans-serif;
     color: #fff;
     text-transform: uppercase;
@@ -39,50 +39,49 @@ p{
 }
 /*/common style*/
 
-/*studioInf*/
-.studioInfBg{
+
+
+/*top*/
+.topBg{
     padding:172px 0 115px; 
     background:url(../img/studioInfBg.jpg)top center; 
-    background-size: cover;
-    
+    background-size: cover; 
 }
-.studioInf{
+.topContent{
     margin-bottom:50px; 
 }
-.studioInf h2{
+.topContent h2{
     margin-top:0;
-  
 }
-.studioInf p ,.credoContent p{
+.topContent p ,.credoContent p{
     font:24px 'PT Sans Caption';
     text-align: center;
     line-height:1.5; 
     color:#fff;
 }
-.sizes{
+.a{
     width:29%;
     margin:0 2%;
+    
     float: left;
     border:2px solid #f1f1f3;
     position: relative;
+    box-sizing: border-box;
     
 }
 .number{
+    font:48px 'Parangon 530C';
     color:#fff;
     text-align: center;
-    font:48px 'Parangon 530C';
-    margin-top:64px; 
-    margin-bottom:0; 
+    margin:64px 0 0 0;
 }
 .text{
+    font:18px 'PT Sans Caption';
     color:#fff;
     text-align: center;
-    font:18px 'PT Sans Caption';
-    margin-top:0;
-    margin-bottom:60px; 
+    margin:0 0 60px 0;
 }
-
-.sizes::before{
+.a::before{
     content: '';
     position: absolute;
     top:5px;
@@ -99,16 +98,17 @@ p{
 .clients::before{
     background-position: -96px 0;
 }
-/*/studioInf*/
+/*/top*/
+
+
 
 /*nav*/
-.border{
-    border-bottom:2px solid #2d2d2d; 
-}
 .navigation{
+    border-bottom:2px solid #adadad; 
+}
+.navigationContent{
     float: right;
 }
-
 .navigation ul li{
     display: inline-block;
     margin-left:30px; 
@@ -118,12 +118,15 @@ p{
     color:#000;
     text-decoration: none;
 }
-.navigation ul li a:hover, .navigation ul li a.active{
+.navigationContent ul li a:hover, .navigationContent ul li a.active{
     color:#f6ae48;
 }
 /*/nav*/
 
-/*aboutTop*/
+
+
+/*abput*/
+    /*aboutTop*/
 .aboutTop{
     margin-top:120px;
     padding-bottom:200px; 
@@ -134,39 +137,41 @@ p{
     position: relative;
 }
 .aboutTopContent::before{
-    content: '';
+    content: 'We';
     display: block;
+    font:340px 'Tahoma';
+    font-weight: bold;
+    color:#c1c1c1;
     position: absolute;
-    left:-45px;
-    top:-10px;
-    width: 580px;
-    height: 247px;
-    background: url(../img/we.png);
+    left:-80px;
+    top:-100px;
+    z-index: -1;
+    opacity:.7; 
+    
 }
 .aboutTopContent p{
     font-size:20px;
     line-height:1.5;
 }
+    /*/aboutTop*/
 
-/*/aboutTop*/
-/*aboutBottom*/
 
+    /*aboutBottom*/
 .aboutBottom{
     margin-bottom: 200px;
 }
 .aboutBottom p{
     margin-top:5px;
-    
     line-height: 1.5;
 }
-.style{
+.b{
     padding:30px 10px 10px 10px; 
     width:27%;
     margin:0 2%;
     float: left;
     position: relative;
 }    
-.style::before{
+.b::before{
     content: '';
     display: block;
     position: absolute;
@@ -176,15 +181,13 @@ p{
     height:70px;
     background: url(../img/aboutSetIcon.png);
 }
-
-
 .promotion::before{
     background-position:-46px 3px; 
 }
 .support::before{
     background-position: -112px 4px;
 }
-.style:hover , .style:hover h4 ,.style:hover p{
+.b:hover , .b:hover h4 ,.b:hover p{
     background: #f6ae48;
     color: #fff;
 }
@@ -198,6 +201,9 @@ p{
     background-position:-112px -73px; 
 }
 /*/aboutBottom*/
+/*/about*/
+
+
 
 /*credo*/
 .credoBg{
@@ -209,32 +215,26 @@ p{
 }
 /*/credo*/
 
+
+
 /*price*/
 .price{
-    position: relative;
-    margin-bottom:100px; 
+    padding:100px 0 50px 0;  
 }
-.price::before{
-    content:'';
-    width:626px;
-    height:527px;
-    display: block;
-    position: absolute;
-    z-index: -1;
-    top:-40px;
-    background: url(../img/priceBlockBg.jpg);
+.price h2{ 
+    color:#000;  
 }
 .priceList{
     margin-bottom: 160px;
 }
-.priceBlock{
+.c{
     width:27%;
     float:left;
     padding:20px 10px 60px 10px;
-    margin: 300px 50px 50px 0; 
+    margin: 50px 50px 50px 0; 
     
 }
-.priceBlock p{
+.c p{
     font: 40px 'Futura Md Bt';
     font-weight: bold;
     color:#fff;
@@ -243,7 +243,7 @@ p{
     margin-bottom:90px; 
     border-bottom: 2px solid #ccc;
 }
-.priceBlock span{
+.c span{
     display: block;
     text-align: center;
     font-size: 20px;
@@ -260,7 +260,7 @@ p{
 }
 
 
-/*seo*/
+    /*seo*/
 .seoContent ,.adaptiveContent ,.careContent{
     position: relative;
     width:60%;
@@ -270,12 +270,10 @@ p{
 .seoContent::before{
     content: 'Be the first';
     text-transform: uppercase;
-    font-size:80px;
-    font-family: Tahoma;
+    font:80px 'Tahomae';
     font-weight: bold;
     color:#dfdfdf;
     position: absolute;
-    
     z-index: -1;
 }
 .seoContent h4 , .adaptiveContent h4 ,.careContent h4{
@@ -291,14 +289,13 @@ p{
     margin-left: 10px;
 }
 .seoImg{
-    background: url(../img/seo.png)no-repeat top right;
-    height:471px;
-    margin-right:80px 
+    float: right;
 }
-/*/seo*/
+    /*/seo*/
 /*/price*/
-/*lastProjects*/
 
+
+/*lastProjects*/
 .lastProjectsTittle{
     position: relative;
     padding: 40px 0; 
@@ -325,6 +322,7 @@ p{
     font:96px 'Tahoma', sans-serif;
     color:#8c8da3;
     text-transform: uppercase;
+    opacity: .4;
 }
 .item1Style{
     width: 50%;
@@ -335,16 +333,19 @@ p{
     width: 25%;
     float: left;
     overflow: hidden;
-    height: 100%;
+   
 }
 .footerProjects{
+    margin-top:-4px;
     padding: 40px 0; 
     background: #303263;
     position: relative;
 }
 .footerProjects button{
+    cursor: pointer;
     text-transform: uppercase;
     padding:10px 10px;
+    margin-left: -110px;
     width: 200px;
     background: #6a6b8e;
     border-radius:5px; 
@@ -352,9 +353,14 @@ p{
     position: absolute;
     left:50%;
     top:23%;
-    margin-left: -110px;
+    
+}
+.footerProjects button:hover{
+    background: #6A6BBA;
 }
 /*/lastProjects*/
+
+
 
 /*adaptive*/
 .adaptive{
@@ -374,7 +380,9 @@ p{
 }
 .adaptiveImg , .careImg{
     width: 40%;
+    height: auto;
     float:left;
+    
 }
 /*/adaptive*/
 
@@ -385,26 +393,26 @@ p{
     padding: 50px 0 100px 0;
     position: relative;
 }
-.tradeBlockItem{
+.d{
     width:29%;
     float: left;
     margin:0 2%;
     position: relative;
 }
-.tradeBlockItem h5 {
+.d h5 {
     font:30px 'Parangon 530C', sans-serif;
     color:#fff;
     text-transform: uppercase;
     margin-left: 80px;
     margin-bottom: 10px;
 }
-.tradeBlockItem p{
+.d p{
     font:16px 'Arial' ,sans-serif;
     color:#fff;
     line-height:1.5; 
     
 }
-.tradeBlockItem::before{
+.d::before{
     content: '';
     width:80px;
     height:65px; 
